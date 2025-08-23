@@ -7,3 +7,7 @@
 Tempo de Desenvolvimento & Qualidade: Quando há pressa para entregar um projeto, é comum cortar etapas como testes, revisão de código ou documentação. Isso acelera a entrega, mas pode gerar problemas no futuro, como falhas e retrabalho. Investir mais tempo no início pode evitar muitos problemas depois.
 
 Escalabilidade & Simplicidade: Projetar um sistema que aguente crescer (mais usuários, mais dados) costuma exigir arquiteturas mais robustas e complexas. Isso aumenta o esforço inicial e pode complicar o projeto. Por outro lado, uma solução simples funciona bem no começo, mas pode não suportar o crescimento. É preciso equilibrar o presente com o futuro.
+
+4- UML
+
+![img uml]()
