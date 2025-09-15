@@ -29,7 +29,7 @@ Classe Main
 ![img uml](https://github.com/joaosantos13/bertoti/blob/main/engenhariadesoftware/img/image.png)
 ![img uml](https://github.com/joaosantos13/bertoti/blob/main/engenhariadesoftware/img/img4.png)
 
-6-
+6- Testes
 
 ![img uml](https://github.com/joaosantos13/bertoti/blob/main/engenhariadesoftware/img/imgTeste.png)
 
