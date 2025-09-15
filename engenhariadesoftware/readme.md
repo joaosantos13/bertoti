@@ -14,4 +14,16 @@ Escalabilidade & Simplicidade: Projetar um sistema que aguente crescer (mais usu
 
 5- Classe Produto 
 
-![img uml](https://github.com/joaosantos13/bertoti/blob/main/engenhariadesoftware/img/image.png)
+![img uml](https://github.com/joaosantos13/bertoti/blob/main/engenhariadesoftware/img/img1.png)
+
+Classe Cliente 
+
+![img uml](https://github.com/joaosantos13/bertoti/blob/main/engenhariadesoftware/img/img2.png)
+
+Classe Carrinho
+
+![img uml](https://github.com/joaosantos13/bertoti/blob/main/engenhariadesoftware/img/img3.png)
+
+Classe Main
+
+![img uml](https://github.com/joaosantos13/bertoti/blob/main/engenhariadesoftware/img/img4.png)
