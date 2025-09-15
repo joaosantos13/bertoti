@@ -11,3 +11,7 @@ Escalabilidade & Simplicidade: Projetar um sistema que aguente crescer (mais usu
 4- UML
 
 ![img uml](https://github.com/joaosantos13/bertoti/blob/main/engenhariadesoftware/img/UML.png)
+
+5- Classe Produto 
+
+![img uml](https://github.com/joaosantos13/bertoti/blob/main/engenhariadesoftware/img/image.png)
