@@ -1,0 +1,7 @@
+PROJETO JAVA 21 
+POST TESTE
+"{
+  "nome": "Café Preto",
+  "preco": 2.50,
+  "estoque": 50
+}"
