@@ -1,0 +1,15 @@
+com\thehecklers\sburrestdemo\model\Produto.class
+com\thehecklers\sburrestdemo\Produto.class
+com\thehecklers\sburrestdemo\SburRestDemoApplication.class
+com\thehecklers\sburrestdemo\repository\ItemPedidoRepository.class
+com\thehecklers\sburrestdemo\controller\ProdutoController.class
+com\thehecklers\sburrestdemo\controller\TelaInicialController.class
+com\thehecklers\sburrestdemo\model\Pedido.class
+com\thehecklers\sburrestdemo\controller\PedidoController.class
+com\thehecklers\sburrestdemo\repository\PedidoRepository.class
+com\thehecklers\sburrestdemo\model\ItemPedido.class
+com\thehecklers\sburrestdemo\RestApiDemoController.class
+com\thehecklers\sburrestdemo\repository\ProdutoRepository.class
+com\thehecklers\sburrestdemo\Database.class
+com\thehecklers\sburrestdemo\controller\ProdutosController.class
+com\thehecklers\sburrestdemo\MainApp.class
