@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.thehecklers.sburrestdemo.controllers.ProdutosController">
+
+    <top>
+        <Label text="Produtos do Mercadinho"
+               style="-fx-font-size: 22px; -fx-padding: 15;"/>
+    </top>
+
+    <center>
+        <TableView fx:id="tabelaProdutos">
+            <columns>
+                <TableColumn fx:id="colunaId" text="ID" prefWidth="60"/>
+                <TableColumn fx:id="colunaNome" text="Produto" prefWidth="220"/>
+                <TableColumn fx:id="colunaPreco" text="Preço" prefWidth="120"/>
+                <TableColumn fx:id="colunaEstoque" text="Estoque" prefWidth="100"/>
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <VBox spacing="10" style="-fx-padding: 15;">
+            <HBox spacing="10">
+                <TextField fx:id="campoNome" promptText="Nome do produto"/>
+                <TextField fx:id="campoPreco" promptText="Preço"/>
+                <TextField fx:id="campoEstoque" promptText="Estoque"/>
+            </HBox>
+
+            <HBox spacing="10">
+                <Button text="Adicionar" onAction="#adicionarProduto"/>
+                <Button text="Atualizar" onAction="#atualizarProduto"/>
+                <Button text="Excluir" onAction="#excluirProduto"/>
+            </HBox>
+        </VBox>
+    </bottom>
+
+</BorderPane>

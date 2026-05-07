@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" spacing="20"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.thehecklers.sburrestdemo.controller.TelaInicialController">
+
+    <Label text="Mercadinho de Vegetais"
+           style="-fx-font-size: 28px; -fx-font-weight: bold;"/>
+
+    <Label text="Tomates, alface, pepino e salada de frutas"/>
+
+    <Button text="Entrar no Mercadinho"
+            onAction="#abrirProdutos"
+            prefWidth="220"/>
+
+</VBox>
