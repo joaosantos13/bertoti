@@ -61,15 +61,15 @@ A equipe desenvolveu o Gestão de Tráfego e Viaturas, uma aplicação Web desti
 
 **Contribuições Pessoais**
 
-► **Modelagem e criação do banco de dados:** Definição da estrutura para armazenar as informações, criando tabelas, relacionamentos e regras de integridade (ex: usuario, cidade, modelo, viatura, ordem_servico, abastecimento).
+► **Arquitetura, Modelagem e Implementação Estrutural de Banco de Dados:** Fui o responsável pela idealização e concretização da arquitetura informacional do sistema. Isso englobou a modelagem relacional de alto nível, culminando na orquestração de esquemas complexos, normalização de tabelas, estabelecimento de múltiplos relacionamentos mediante chaves primárias e estrangeiras, além da rigorosa aplicação de restrições e regras de integridade referencial para entidades cruciais ao ecossistema da aplicação (tais como: `usuario`, `cidade`, `modelo`, `viatura`, `ordem_servico` e `abastecimento`), garantindo absoluta confiabilidade e robustez no armazenamento persistente.
 
-► **Desenvolvimento e manutenção:** Adequações na estrutura de dados conforme as necessidades das novas funcionalidades ao longo das sprints.
+► **Evolução Contínua e Refatoração de Estruturas de Dados:** Atuei de forma proativa na manutenção evolutiva e no aprimoramento contínuo da infraestrutura de dados. Esta atribuição exigiu a execução de adequações arquitetônicas e migrações de esquema perfeitamente alinhadas com as metodologias ágeis adotadas pela equipe, assegurando que o banco de dados pudesse escalar e suportar os requisitos emergentes e as novas complexidades de negócio introduzidas a cada nova etapa de desenvolvimento (*sprint*).
 
-► **Backend e endpoints:** Criação de endpoints no backend para disponibilizar e manipular os dados utilizados pelo sistema.
+► **Desenvolvimento de Backend e Projeção de Interfaces de Programação (API RESTful):** Desempenhei um papel vital na construção da lógica de negócios e na camada de serviços da aplicação. Fui encarregado da engenharia e implementação de *endpoints* resilientes e otimizados no ecossistema do servidor, viabilizando o tráfego seguro, a manipulação transacional e a interoperabilidade eficiente dos dados entre as camadas de persistência e apresentação, respeitando os princípios e as diretrizes fundamentais da arquitetura REST.
 
-► **Histórico de registros e Filtros:** Implementação de filtros para facilitar a consulta direcionada de informações e históricos.
+► **Implementação de Mecanismos de Busca Avançada e Filtragem Histórica:** Conduzi o desenvolvimento de algoritmos e lógicas de filtragem multifacetadas voltadas para o resgate otimizado do histórico de transações e registros. Esta implementação proporcionou aos usuários da plataforma uma experiência de consulta altamente performática, granular e parametrizada, mitigando a sobrecarga processual e garantindo a extração de dados estritamente pertinentes por meio de critérios de busca dinâmicos e altamente direcionados.
 
-► **Dados do dashboard:** Preparação e disponibilização dos dados que alimentam os indicadores de utilização das viaturas (gastos, litros abastecidos, quilometragem, consumo médio).
+► **Processamento Analítico e Estruturação de Métricas para Painéis de Controle (Dashboard):** Fui responsável pela modelagem analítica e pela transformação de dados brutos em indicadores-chave de desempenho (KPIs) acionáveis e de alto valor agregado. Isso envolveu a extração, consolidação e o refinamento de métricas operacionais, disponibilizando um fluxo de dados devidamente estruturado para alimentar as interfaces de visualização gerencial. Essa estruturação viabilizou o monitoramento preciso e em tempo real de variáveis críticas para o controle da frota, como eficiência de consumo médio, análise de custos operacionais, volume volumétrico de abastecimento e telemetria de quilometragem percorrida.
 
 **Hard Skills**
 
