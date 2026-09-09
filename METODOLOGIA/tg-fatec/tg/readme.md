@@ -61,26 +61,26 @@ A equipe desenvolveu o Gestão de Tráfego e Viaturas, uma aplicação Web desti
 
 **Contribuições Pessoais**
 
-► **Arquitetura, Modelagem e Implementação Estrutural do Banco de Dados**
-  * **Concepção de Esquemas Relacionais:** Liderança na idealização, abstração e construção da arquitetura informacional do sistema, aplicando os princípios de normalização de dados para mitigar redundâncias e assegurar a coerência do banco de dados relacional.
-  * **Definição de Entidades e Relacionamentos:** Estruturação de entidades centrais da aplicação (como `usuario`, `cidade`, `modelo`, `viatura`, `ordem_servico` e `abastecimento`), estabelecendo mapeamentos complexos de cardinalidade por meio do gerenciamento preciso de chaves primárias e estrangeiras.
-  * **Garantia de Integridade e Performance:** Configuração e aplicação rigorosa de restrições de integridade referencial (*constraints*), além do desenvolvimento e otimização de índices em colunas estratégicas (como datas de abastecimento e identificadores de veículos) para acelerar a execução de consultas e buscas.
+► **Engenharia de Dados, Arquitetura Relacional e Modelagem Estrutural**
+  * **Concepção de Esquemas Relacionais e DDL:** Atuação na concepção e execução do esquema do banco de dados relacional via comandos de DDL (*Data Definition Language*), aplicando rigorosamente os conceitos das Formas Normais (1FN, 2FN e 3FN) para eliminação de anomalias de inserção, alteração e deleção.
+  * **Definição de Entidades, Cardinalidade e Mapeamento:** Mapeamento conceitual e lógico das entidades centrais (`usuario`, `cidade`, `modelo`, `viatura`, `ordem_servico` e `abastecimento`), estabelecendo associações de cardinalidade (1:N, N:M) através da atribuição criteriosa de chaves primárias (*primary keys*) e chaves estrangeiras (*foreign keys*).
+  * **Garantia de Integridade Referencial e Otimização:** Definição e aplicação de restrições de integridade (*NOT NULL*, *UNIQUE*, *CHECK*), além do planejamento e criação de índices B-Tree estrategicamente posicionados em colunas com alto índice de busca e junção (como identificadores de viaturas e carimbos de data/hora), reduzindo o custo computacional do plano de execução de consultas (*query execution plans*).
 
-► **Gerenciamento, Evolução e Refatoração de Dados**
-  * **Manutenção Evolutiva:** Execução do acompanhamento contínuo da infraestrutura de dados ao longo das etapas iterativas de desenvolvimento (*sprints*), realizando adequações estruturais conforme surgiam novas necessidades de negócio.
-  * **Adequação de Esquema e Consistência:** Ajuste fino e refatoração de tabelas e tipos de dados existentes para garantir compatibilidade total entre as atualizações solicitadas pela equipe e a camada de persistência.
+► **Sustentação, Migração Evolutiva e Administração no Supabase**
+  * **Gerenciamento de Schema na Nuvem:** Administração da instância do banco de dados hospedada no Supabase (PostgreSQL), garantindo a estabilidade, segurança em nível de acesso e disponibilidade do ambiente de persistência.
+  * **Refatoração e Manutenção Evolutiva:** Execução de scripts de migração (*DDL updates*) e adequações de esquema de forma sincronizada com as *sprints* de desenvolvimento do time, garantindo a compatibilidade contínua entre a camada de persistência e os contratos das entidades do ecossistema.
 
-► **Desenvolvimento de Serviços Backend e Engenharia de APIs RESTful**
-  * **Construção de Endpoints Transacionais:** Desenvolvimento da lógica de negócios no servidor para viabilizar operações de CRUD (Criação, Leitura, Atualização e Exclusão) seguras e padronizadas.
-  * **Integração entre Camadas:** Conexão entre o banco de dados e a camada de serviços da API RESTful, garantindo a trafegabilidade fluida, a serialização eficiente e o consumo correto das informações pelas interfaces de frontend.
+► **Desenvolvimento de Serviços Backend, Regras de Negócio e APIs RESTful**
+  * **Construção de Endpoints e DTOs no Spring Boot:** Implementação de rotas e controladores para operações transacionais de CRUD, além da utilização do padrão DTO (*Data Transfer Object*) para garantir o desacoplamento entre os modelos de banco de dados e as respostas trafegadas na API RESTful.
+  * **Persistência e Comunicação de Camadas:** Construção da camada de acesso a dados (*Data Access Layer*) e serviços no backend em Java, viabilizando a validação de regras de negócio complexas, o tratamento adequado de exceções e a integridade das transações antes de efetivar modificações no banco de dados.
 
-► **Mecanismos Avançados de Filtragem e Consulta Histórica**
-  * **Lógica de Busca Parametrizada:** Elaboração de lógicas de filtragem multifacetadas no backend para permitir o resgate granular e direcionado de registros no histórico de operações do sistema.
-  * **Otimização da Experiência de Consulta:** Implementação de estratégias para que requisições de grande volume sejam processadas de forma performática, permitindo aos gestores localizar dados por veículos específicos, intervalos de datas ou técnicos responsáveis.
+► **Construção de Mecanismos de Filtragem e Consultas Parametrizadas**
+  * **Querying e Filtros Dinâmicos:** Desenvolvimento de lógicas de consulta e filtros parametrizados no backend para resgate de dados históricos, permitindo a combinação flexível de múltiplos critérios de pesquisa (como intervalo temporal, frota/veículo, condutor e centro de custo).
+  * **Otimização de Desempenho em Pesquisas:** Estruturação de consultas otimizadas no banco de dados para evitar gargalos de *I/O* e minimizar o tempo de resposta (*latency*) ao recuperar grandes volumes de registros históricos de abastecimento e deslocamento.
 
-► **Engenharia de Dados e Métricas para o Painel de Controle (Dashboard)**
-  * **Consolidação e Modelagem Analítica:** Agregação e refinamento de dados brutos para a geração de indicadores-chave de desempenho (KPIs) de alto valor operacional.
-  * **Disponibilização de Indicadores Gerenciais:** Estruturação dos dados necessários para a alimentação de gráficos e métricas operacionais, cobrindo índices de consumo médio de combustível, volume de litros abastecidos, quilometragem acumulada e análises de custos por viatura.
+► **Engenharia de Dados Analíticos e Agregação para Dashboards**
+  * **Processamento Analítico Relacional:** Elaboração de consultas com funções de agregação (*SUM*, *AVG*, *COUNT*) e agrupamentos avançados (*GROUP BY*, *HAVING*) para transformar dados brutos em métricas de inteligência operacional.
+  * **Disponibilização de Indicadores Gerenciais (KPIs):** Estruturação e exposição de dados consolidados via endpoints específicos para a alimentação gráfica do dashboard frontend, viabilizando a extração de métricas sobre consumo médio de combustível (km/l), volumetria de abastecimentos, rodagem acumulada de frota e custos operacionais por técnico ou viatura.
 
 **Hard Skills**
 
