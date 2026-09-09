@@ -61,15 +61,26 @@ A equipe desenvolveu o Gestão de Tráfego e Viaturas, uma aplicação Web desti
 
 **Contribuições Pessoais**
 
-► **Arquitetura, Modelagem e Implementação Estrutural de Banco de Dados:** Fui o responsável pela idealização e concretização da arquitetura informacional do sistema. Isso englobou a modelagem relacional de alto nível, culminando na orquestração de esquemas complexos, normalização de tabelas, estabelecimento de múltiplos relacionamentos mediante chaves primárias e estrangeiras, além da rigorosa aplicação de restrições e regras de integridade referencial para entidades cruciais ao ecossistema da aplicação (tais como: `usuario`, `cidade`, `modelo`, `viatura`, `ordem_servico` e `abastecimento`), garantindo absoluta confiabilidade e robustez no armazenamento persistente.
+► **Arquitetura, Modelagem e Implementação Estrutural do Banco de Dados**
+  * **Concepção de Esquemas Relacionais:** Liderança na idealização, abstração e construção da arquitetura informacional do sistema, aplicando os princípios de normalização de dados para mitigar redundâncias e assegurar a coerência do banco de dados relacional.
+  * **Definição de Entidades e Relacionamentos:** Estruturação de entidades centrais da aplicação (como `usuario`, `cidade`, `modelo`, `viatura`, `ordem_servico` e `abastecimento`), estabelecendo mapeamentos complexos de cardinalidade por meio do gerenciamento preciso de chaves primárias e estrangeiras.
+  * **Garantia de Integridade e Performance:** Configuração e aplicação rigorosa de restrições de integridade referencial (*constraints*), além do desenvolvimento e otimização de índices em colunas estratégicas (como datas de abastecimento e identificadores de veículos) para acelerar a execução de consultas e buscas.
 
-► **Evolução Contínua e Refatoração de Estruturas de Dados:** Atuei de forma proativa na manutenção evolutiva e no aprimoramento contínuo da infraestrutura de dados. Esta atribuição exigiu a execução de adequações arquitetônicas e migrações de esquema perfeitamente alinhadas com as metodologias ágeis adotadas pela equipe, assegurando que o banco de dados pudesse escalar e suportar os requisitos emergentes e as novas complexidades de negócio introduzidas a cada nova etapa de desenvolvimento (*sprint*).
+► **Gerenciamento, Evolução e Refatoração de Dados**
+  * **Manutenção Evolutiva:** Execução do acompanhamento contínuo da infraestrutura de dados ao longo das etapas iterativas de desenvolvimento (*sprints*), realizando adequações estruturais conforme surgiam novas necessidades de negócio.
+  * **Adequação de Esquema e Consistência:** Ajuste fino e refatoração de tabelas e tipos de dados existentes para garantir compatibilidade total entre as atualizações solicitadas pela equipe e a camada de persistência.
 
-► **Desenvolvimento de Backend e Projeção de Interfaces de Programação (API RESTful):** Desempenhei um papel vital na construção da lógica de negócios e na camada de serviços da aplicação. Fui encarregado da engenharia e implementação de *endpoints* resilientes e otimizados no ecossistema do servidor, viabilizando o tráfego seguro, a manipulação transacional e a interoperabilidade eficiente dos dados entre as camadas de persistência e apresentação, respeitando os princípios e as diretrizes fundamentais da arquitetura REST.
+► **Desenvolvimento de Serviços Backend e Engenharia de APIs RESTful**
+  * **Construção de Endpoints Transacionais:** Desenvolvimento da lógica de negócios no servidor para viabilizar operações de CRUD (Criação, Leitura, Atualização e Exclusão) seguras e padronizadas.
+  * **Integração entre Camadas:** Conexão entre o banco de dados e a camada de serviços da API RESTful, garantindo a trafegabilidade fluida, a serialização eficiente e o consumo correto das informações pelas interfaces de frontend.
 
-► **Implementação de Mecanismos de Busca Avançada e Filtragem Histórica:** Conduzi o desenvolvimento de algoritmos e lógicas de filtragem multifacetadas voltadas para o resgate otimizado do histórico de transações e registros. Esta implementação proporcionou aos usuários da plataforma uma experiência de consulta altamente performática, granular e parametrizada, mitigando a sobrecarga processual e garantindo a extração de dados estritamente pertinentes por meio de critérios de busca dinâmicos e altamente direcionados.
+► **Mecanismos Avançados de Filtragem e Consulta Histórica**
+  * **Lógica de Busca Parametrizada:** Elaboração de lógicas de filtragem multifacetadas no backend para permitir o resgate granular e direcionado de registros no histórico de operações do sistema.
+  * **Otimização da Experiência de Consulta:** Implementação de estratégias para que requisições de grande volume sejam processadas de forma performática, permitindo aos gestores localizar dados por veículos específicos, intervalos de datas ou técnicos responsáveis.
 
-► **Processamento Analítico e Estruturação de Métricas para Painéis de Controle (Dashboard):** Fui responsável pela modelagem analítica e pela transformação de dados brutos em indicadores-chave de desempenho (KPIs) acionáveis e de alto valor agregado. Isso envolveu a extração, consolidação e o refinamento de métricas operacionais, disponibilizando um fluxo de dados devidamente estruturado para alimentar as interfaces de visualização gerencial. Essa estruturação viabilizou o monitoramento preciso e em tempo real de variáveis críticas para o controle da frota, como eficiência de consumo médio, análise de custos operacionais, volume volumétrico de abastecimento e telemetria de quilometragem percorrida.
+► **Engenharia de Dados e Métricas para o Painel de Controle (Dashboard)**
+  * **Consolidação e Modelagem Analítica:** Agregação e refinamento de dados brutos para a geração de indicadores-chave de desempenho (KPIs) de alto valor operacional.
+  * **Disponibilização de Indicadores Gerenciais:** Estruturação dos dados necessários para a alimentação de gráficos e métricas operacionais, cobrindo índices de consumo médio de combustível, volume de litros abastecidos, quilometragem acumulada e análises de custos por viatura.
 
 **Hard Skills**
 
